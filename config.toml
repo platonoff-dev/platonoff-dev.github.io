@@ -1,0 +1,68 @@
+baseURL = "http://platonoff-dev.com/"
+languageCode = "ru-ru"
+title = "Anatolii Platonov"
+author = "Anatolii Platonov"
+info = "Software Developer"
+theme = "hugo-coder"
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+  author = "Anatolii Platonov"
+  info = "Software Developer"
+  description = "M peronal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.jpg"
+
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  hideFooter = true
+  hideCredits = false
+  hideCopyright = false
+  since = 2021
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "TIL"
+  weight = 2
+  url = "til/"
+[[menu.main]]
+  name = "About"
+  weight = 3
+  url = "about/"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/platonoff-dev/"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/dotofsp/"
+
+[[params.social]]
+  name = "Facebook"
+  icon = "fa fa-facebook"
+  weight = 3
+  url = "https://www.facebook.com/platonoff.dev/"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-at"
+  weight = 4
+  url = "mailto:p4m.dev@gmail.com"
