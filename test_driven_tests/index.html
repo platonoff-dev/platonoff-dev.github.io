@@ -5,13 +5,16 @@
 <meta http-equiv=content-language content="en">
 <meta name=color-scheme content="light dark">
 <meta name=author content="Anatolii Platonov">
-<meta name=description content="Tests driven tests in go    This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.">
+<meta name=description content="This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.
+func TestSomething(t *testing.T) { tests := []struct{ input interface{} expected interface{} name string }{ // Your test cases here 	} for _, tc := range tests { t.">
 <meta name=keywords content="blog,developer,personal">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Tests driven tests in go">
-<meta name=twitter:description content="Tests driven tests in go    This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.">
+<meta name=twitter:description content="This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.
+func TestSomething(t *testing.T) { tests := []struct{ input interface{} expected interface{} name string }{ // Your test cases here 	} for _, tc := range tests { t.">
 <meta property="og:title" content="Tests driven tests in go">
-<meta property="og:description" content="Tests driven tests in go    This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.">
+<meta property="og:description" content="This trick is very useful if you are using TDD. From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.
+func TestSomething(t *testing.T) { tests := []struct{ input interface{} expected interface{} name string }{ // Your test cases here 	} for _, tc := range tests { t.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://platonoff-dev.com/test_driven_tests/"><meta property="article:section" content="til">
 <meta property="article:published_time" content="2022-02-05T00:00:00+00:00">
@@ -69,12 +72,6 @@ Tests driven tests in go
 </a>
 </h1>
 </header>
-<h1 id=tests-driven-tests-in-go>
-Tests driven tests in go
-<a class=heading-link href=#tests-driven-tests-in-go>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h1>
 <p>This trick is very useful if you are using TDD.
 From time to time there is a lot of duplication in our tests. For each test case only the input, the expected output, and name of test case change. Everything else is boilerplate. What wes&rsquo;d like to set up all the inputs and expected outputs and feel them to a single test harness.</p>
 <div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=font-weight:700>func</span> TestSomething(t *testing.T) {
