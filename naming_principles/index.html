@@ -1,182 +1,26 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=content-language content="en">
-<meta name=color-scheme content="light dark">
-<meta name=author content="Anatolii Platonov">
-<meta name=description content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=content-language content="en"><meta name=color-scheme content="light dark"><meta name=author content="Anatolii Platonov"><meta name=description content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
 int d; // elapsed time in days Good example:
-int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information.">
-<meta name=keywords content="blog,developer,personal">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Clean code naming principles">
-<meta name=twitter:description content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
+int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Clean code naming principles"><meta name=twitter:description content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
 int d; // elapsed time in days Good example:
-int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information.">
-<meta property="og:title" content="Clean code naming principles">
-<meta property="og:description" content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
+int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information."><meta property="og:title" content="Clean code naming principles"><meta property="og:description" content="Use Intention-Revealing names.    Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent. Bad example:
 int d; // elapsed time in days Good example:
-int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://platonoff-dev.com/naming_principles/"><meta property="article:section" content="til">
-<meta property="article:published_time" content="2022-01-06T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-01-06T00:00:00+00:00">
-<title>
-Clean code naming principles · Anatolii Platonov
-</title>
-<link rel=canonical href=http://platonoff-dev.com/naming_principles/>
-<link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as=font type=font/woff2 crossorigin>
-<link rel=stylesheet href=/css/coder.min.eb7743f94930acfd17146aecc1f80e86fe35b3e451f2ec0c98485f9c4d962f34.css integrity="sha256-63dD+UkwrP0XFGrswfgOhv41s+RR8uwMmEhfnE2WLzQ=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=/css/coder-dark.min.dde8a61eb31a32353b4baf3d9113f03c4ea2a8ca9bb736f59ca2d2b2cb664f0b.css integrity="sha256-3eimHrMaMjU7S689kRPwPE6iqMqbtzb1nKLSsstmTws=" crossorigin=anonymous media=screen>
-<link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32>
-<link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16>
-<link rel=apple-touch-icon href=/images/apple-touch-icon.png>
-<link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
-<script defer src=https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js integrity=sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b crossorigin=anonymous></script>
-<meta name=generator content="Hugo 0.92.1">
-</head>
-<body class="preload-transitions colorscheme-auto" onload=twemoji.parse(document.body)>
-<div class=float-container>
-<a id=dark-mode-toggle class=colorscheme-toggle>
-<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</div>
-<main class=wrapper>
-<nav class=navigation>
-<section class=container>
-<a class=navigation-title href=/>
-Anatolii Platonov
-</a>
+int elapsedTimeInDays; Avoid disinformation    You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is information."><meta property="og:type" content="article"><meta property="og:url" content="http://platonoff-dev.com/naming_principles/"><meta property="article:section" content="til"><meta property="article:published_time" content="2022-01-06T00:00:00+00:00"><meta property="article:modified_time" content="2022-01-06T00:00:00+00:00"><title>Clean code naming principles · Anatolii Platonov</title><link rel=canonical href=http://platonoff-dev.com/naming_principles/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.eb7743f94930acfd17146aecc1f80e86fe35b3e451f2ec0c98485f9c4d962f34.css integrity="sha256-63dD+UkwrP0XFGrswfgOhv41s+RR8uwMmEhfnE2WLzQ=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.dde8a61eb31a32353b4baf3d9113f03c4ea2a8ca9bb736f59ca2d2b2cb664f0b.css integrity="sha256-3eimHrMaMjU7S689kRPwPE6iqMqbtzb1nKLSsstmTws=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><script defer src=https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js integrity=sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b crossorigin=anonymous></script><meta name=generator content="Hugo 0.96.0"></head><body class="preload-transitions colorscheme-auto" onload=twemoji.parse(document.body)><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Anatolii Platonov</a>
 <input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle>
-<i class="fa fa-bars fa-fw" aria-hidden=true></i>
-</label>
-<ul class=navigation-list>
-<li class=navigation-item>
-<a class=navigation-link href=/posts/>Blog</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/til/>TIL</a>
-</li>
-<li class=navigation-item>
-<a class=navigation-link href=/about/>About</a>
-</li>
-</ul>
-</section>
-</nav>
-<div class=content>
-<section class="container page">
-<article>
-<header>
-<h1 class=title>
-<a class=title-link href=http://platonoff-dev.com/naming_principles/>
-Clean code naming principles
-</a>
-</h1>
-</header>
-<h2 id=use-intention-revealing-names>
-Use Intention-Revealing names.
-<a class=heading-link href=#use-intention-revealing-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent.
-Bad example:</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>int d; // elapsed time in days
-</code></pre></div><p>Good example:</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>int elapsedTimeInDays;
-</code></pre></div><h2 id=avoid-disinformation>
-Avoid disinformation
-<a class=heading-link href=#avoid-disinformation>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is <em>information</em>. Using inconsistent spellings is <em>disinformation</em>.</p>
-<ul>
-<li><strong>Make meaningful distinctions.</strong> Items with different names should mean different things. Numeric name is opposite of intentional naming. Such names are not disinformative - they are noninformative.
-<ul>
-<li><strong>Don&rsquo;t use noise words.</strong> For example if you have <code>Product</code> class, and <code>ProductData</code>, <code>ProductInfo</code> is example of indistinct names with noise words.</li>
-</ul>
-</li>
-</ul>
-<h2 id=use-pronounceable-names>
-Use pronounceable names.
-<a class=heading-link href=#use-pronounceable-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<h2 id=use-searchable-names>
-Use searchable names.
-<a class=heading-link href=#use-searchable-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Longer names trump shorter names, and any searchable name trumps a constant in code. <em>The length of a name should correspond to the size of its scope.</em></p>
-<h2 id=avoid-encodings>
-Avoid encodings.
-<a class=heading-link href=#avoid-encodings>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>We have enough encodings to deal with without adding more to our burden. Encoding type or scope information into names simply adds an extra burden of deciphering.</p>
-<h2 id=avoid-mental-mapping>
-Avoid mental mapping
-<a class=heading-link href=#avoid-mental-mapping>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Readers shouldn&rsquo;t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.</p>
-<h2 id=class-names>
-Class names
-<a class=heading-link href=#class-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Classes and objects should have noun or noun phrase names like <code>Customer</code>, <code>WikiPage</code>, <code>Manager</code>, etc.</p>
-<h2 id=method-names>
-Method names
-<a class=heading-link href=#method-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Methods should have verb or verb phrase names like <code>postPayment</code>, <code>deletePage</code>, <code>save</code>. When constructors areoverloaded, use static factory methods with names that describe the arguments. For example:</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Complex fulcrumPoint = Complex.FromRealNumber(23.0);
-</code></pre></div><p>is generally better than</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Complex fulcrumPoint = new Complex(23.0);
-</code></pre></div><p>Consider enforcing their use by making corresponding constructors private.</p>
-<h2 id=dont-be-cute>
-Don&rsquo;t be cute
-<a class=heading-link href=#dont-be-cute>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Say what you mean. Mean what you say.</p>
-<h2 id=pick-one-word-per-concept>
-Pick one word per concept
-<a class=heading-link href=#pick-one-word-per-concept>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Pick one word for one abstract concept and stick with it. For instance it&rsquo;s confusing to have <code>fetch</code>, <code>retrieve</code>, <code>get</code> as equivalent methods of different classes.</p>
-<h2 id=use-solution-domain-names>
-Use solution domain names
-<a class=heading-link href=#use-solution-domain-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Remember that the people who read your code will be programmers. So go ahead and use computer science terms, algorithm names, etc. There are lots of very technical things that programmers have to do. Choosing technical names for those things is usually the most appropriate course.</p>
-<h2 id=use-problem-domain-names>
-Use problem domain names
-<a class=heading-link href=#use-problem-domain-names>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h2>
-<p>Separating solution and problem domain concepts is part of the job of a good programmer and designer. The code that has more to do with problem domain concepts should have names drawn from the problem domain.</p>
-</article>
-</section>
-</div>
-</main>
-<script src=/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
-</body>
-</html>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/til/>TIL</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container page"><article><header><h1 class=title><a class=title-link href=http://platonoff-dev.com/naming_principles/>Clean code naming principles</a></h1></header><h2 id=use-intention-revealing-names>Use Intention-Revealing names.
+<a class=heading-link href=#use-intention-revealing-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Name of variable, function, class, &mldr; should tell you why it exists, what it does, and how it used. If a name requires a comment, then the name does not reveal its intent.
+Bad example:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>int d; // elapsed time in days
+</span></span></code></pre></div><p>Good example:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>int elapsedTimeInDays;
+</span></span></code></pre></div><h2 id=avoid-disinformation>Avoid disinformation
+<a class=heading-link href=#avoid-disinformation><i class="fa fa-link" aria-hidden=true></i></a></h2><p>You should avoid words whose entrenched meanings vary from our intended meaning. Spelling similar concepts similarly is <em>information</em>. Using inconsistent spellings is <em>disinformation</em>.</p><ul><li><strong>Make meaningful distinctions.</strong> Items with different names should mean different things. Numeric name is opposite of intentional naming. Such names are not disinformative - they are noninformative.<ul><li><strong>Don&rsquo;t use noise words.</strong> For example if you have <code>Product</code> class, and <code>ProductData</code>, <code>ProductInfo</code> is example of indistinct names with noise words.</li></ul></li></ul><h2 id=use-pronounceable-names>Use pronounceable names.
+<a class=heading-link href=#use-pronounceable-names><i class="fa fa-link" aria-hidden=true></i></a></h2><h2 id=use-searchable-names>Use searchable names.
+<a class=heading-link href=#use-searchable-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Longer names trump shorter names, and any searchable name trumps a constant in code. <em>The length of a name should correspond to the size of its scope.</em></p><h2 id=avoid-encodings>Avoid encodings.
+<a class=heading-link href=#avoid-encodings><i class="fa fa-link" aria-hidden=true></i></a></h2><p>We have enough encodings to deal with without adding more to our burden. Encoding type or scope information into names simply adds an extra burden of deciphering.</p><h2 id=avoid-mental-mapping>Avoid mental mapping
+<a class=heading-link href=#avoid-mental-mapping><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Readers shouldn&rsquo;t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.</p><h2 id=class-names>Class names
+<a class=heading-link href=#class-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Classes and objects should have noun or noun phrase names like <code>Customer</code>, <code>WikiPage</code>, <code>Manager</code>, etc.</p><h2 id=method-names>Method names
+<a class=heading-link href=#method-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Methods should have verb or verb phrase names like <code>postPayment</code>, <code>deletePage</code>, <code>save</code>. When constructors areoverloaded, use static factory methods with names that describe the arguments. For example:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>Complex fulcrumPoint = Complex.FromRealNumber(23.0);
+</span></span></code></pre></div><p>is generally better than</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>Complex fulcrumPoint = new Complex(23.0);
+</span></span></code></pre></div><p>Consider enforcing their use by making corresponding constructors private.</p><h2 id=dont-be-cute>Don&rsquo;t be cute
+<a class=heading-link href=#dont-be-cute><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Say what you mean. Mean what you say.</p><h2 id=pick-one-word-per-concept>Pick one word per concept
+<a class=heading-link href=#pick-one-word-per-concept><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Pick one word for one abstract concept and stick with it. For instance it&rsquo;s confusing to have <code>fetch</code>, <code>retrieve</code>, <code>get</code> as equivalent methods of different classes.</p><h2 id=use-solution-domain-names>Use solution domain names
+<a class=heading-link href=#use-solution-domain-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Remember that the people who read your code will be programmers. So go ahead and use computer science terms, algorithm names, etc. There are lots of very technical things that programmers have to do. Choosing technical names for those things is usually the most appropriate course.</p><h2 id=use-problem-domain-names>Use problem domain names
+<a class=heading-link href=#use-problem-domain-names><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Separating solution and problem domain concepts is part of the job of a good programmer and designer. The code that has more to do with problem domain concepts should have names drawn from the problem domain.</p></article></section></div></main><script src=/js/coder.min.f48f8b52310e1a89d74558ac6718cde27d388efc7f13bd1cec79598a4fadce38.js integrity="sha256-9I+LUjEOGonXRVisZxjN4n04jvx/E70c7HlZik+tzjg="></script></body></html>
