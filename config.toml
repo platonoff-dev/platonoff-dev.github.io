@@ -16,8 +16,8 @@ pygmentscodefencesguesssyntax = true
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  favicon_32 = "/static/images/favicon-32x32.png"
+  favicon_16 = "/static/images/favicon-16x16.png"
 
   hideFooter = true
   hideCredits = false
@@ -53,13 +53,13 @@ pygmentscodefencesguesssyntax = true
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
   weight = 2
-  url = "https://twitter.com/dotofsp/"
+  url = "https://twitter.com/platonoffDev/"
 
 [[params.social]]
-  name = "Facebook"
-  icon = "fa fa-facebook"
-  weight = 3
-  url = "https://www.facebook.com/platonoff.dev/"
+ name = "Linkedin"
+ icon = "fa fa-linkedin fa-2x"
+ weight = 3
+ url = "https://www.linkedin.com/in/anatoliy-platonov-1a01a7180/"
 
 [[params.social]]
   name = "Email"
