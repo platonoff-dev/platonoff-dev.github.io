@@ -44,7 +44,7 @@ pygmentscodefencesguesssyntax = true
 [[menu.main]]
   name = "CV"
   weight = 4
-  url = "CV.pdf"
+  url = "cv.pdf"
 
 # Social links
 [[params.social]]
