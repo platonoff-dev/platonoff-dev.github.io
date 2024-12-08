@@ -1,13 +1,7 @@
 ---
-url: "/blog_kick_off"
-title: "Blog Kick Off"
+title: Blog Kick Off
 date: 2024-12-08
-tags: ["Blog"]
-categories: []
 ---
-
-# Blog kick off
-
 Hey there!
 
 I’m super excited to kick off a new learning journey where I’ll be diving deep into the **core computer science concepts** that really shape how everything in tech works. While I’ve been a software developer for a while now, I want to go back to the basics and understand the inner workings of things like algorithms, memory management, compilers, and distributed systems — all through hands-on projects and practice problems.

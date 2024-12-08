@@ -1,0 +1,17 @@
+baseURL: "https://me.platonoff.dev/"
+title: Anatolii Platonov
+theme: PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    title: Anatolii Platonov
+    subtitle: "Software Developer"
+    imageWidth: 240
+    imageHeight: 240
+    imageURL: avatar.jpg
+    imageTitle: my image
+menu:
+  main:
+    - name: Posts
+      url: posts
