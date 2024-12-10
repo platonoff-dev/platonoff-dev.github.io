@@ -1,6 +1,6 @@
 ---
 title: Alcor implementation plan
-date: 2024-10-12
+date: 2024-12-10
 ---
 # Alcor implementation plan
 
